@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+  background-color: #d31818; /* Altere para a cor desejada */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.painel {
+  width: 40%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+#gif {
+  width: 100%;
+  margin-bottom: 10px;
+  
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.quadros {
+    display: flex;
+    flex-direction: column; /* Organize os quadros em coluna */
+    justify-content: center;
+    align-items: center;
+    width: 60%; /* Ajuste a largura dos quadros */
+    
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+    width: 30%; /* Ajuste a largura dos quadros */
+    height: 450px; /* Ajuste a altura dos quadros para manter a proporção */
+    border: 5px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px; /* Adicione espaço entre as imagens */
+  
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.card img {
+    width: 100%; /* Ajuste a largura das imagens para ocupar todo o espaço do quadro */
+    height: 100%; /* Ajuste a altura das imagens para ocupar todo o espaço do quadro */
+    object-fit: cover; /* Ajuste para cobrir todo o espaço do quadro */
+  
+  @media only screen and (min-width: 768px) {
+    object-fit: contain;
+  }
+  
+}
+
+/* Correções para responsividade */
+
+@media only screen and (max-width: 768px) {
+  .painel {
+    width: 100%;
+  }
+}
